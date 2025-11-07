@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixelated Coffee Menu</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      background-color: #2b1a01;
+      color: #fff;
+      font-family: 'Press Start 2P', cursive;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px #000;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      text-decoration: underline;
+      text-shadow: 1px 1px #000;
+    }
+
+    .menu {
+      display: inline-block;
+      text-align: left;
+      background-color: #3e2a14;
+      padding: 30px;
+      border: 4px solid #fff;
+      box-shadow: 5px 5px #000;
+    }
+
+    .menu-item {
+      font-size: 14px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-item div {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu-item img.pixelated {
+      image-rendering: pixelated;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .description {
+      font-size: 10px;
+      color: #ffd700;
+      margin-left: 60px;
+      margin-top: -10px;
+      display: block;
+    }
+
+    .price {
+      color: #ffd700;
+    }
+  </style>
+</head>
+<body>
+  <h1>☕ KAPIHAN ☕</h1>
+
+  <h2>Hot Drinks</h2>
+  <div class="menu">
+    <div class="menu-item">
+      <div>
+        <img class="pixelated" src="https://upload.wikimedia.org/wikipedia/commons/4/45/Pixel_coffee_icon.png" alt="Espresso">
+        Espresso
+        <span class="description">Strong and bold, pure coffee shot</span>
+      </div>
+      <span class="price">$2.00</span>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <img class="pixelated" src="https://upload.wikimedia.org/wikipedia/commons/4/45/Pixel_coffee_icon.png" alt="Latte">
+        Latte
+        <span class="description">Smooth coffee with steamed milk</span>
+      </div>
+      <span class="price">$3.50</span>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <img class="pixelated" src="https://upload.wikimedia.org/wikipedia/commons/4/45/Pixel_coffee_icon.png" alt="Cappuccino">
+        Cappuccino
+        <span class="description">Espresso topped with frothy milk foam</span>
+      </div>
+      <span class="price">$3.00</span>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <img class="pixelated" src="https://upload.wikimedia.org/wikipedia/commons/4/45/Pixel_coffee_icon.png" alt="Mocha">
+        Mocha
+        <span class="description">Chocolate and coffee blended perfectly</span>
+      </div>
+      <span class="price">$4.00</span>
+    </div>
+  </div>
+
+  <h2>Cold Drinks</h2>
+  <div class="menu">
+    <div class="menu-item">
+      <div>
+        <img class="pixelated" src="https://upload.wikimedia.org/wikipedia/commons/4/45/Pixel_coffee_icon.png" alt="Iced Coffee">
+        Iced Coffee
+        <span class="description">Chilled coffee with ice cubes</span>
+      </div>
+      <span class="price">$3.00</span>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <img class="pixelated" src="https://upload.wikimedia.org/wikipedia/commons/4/45/Pixel_coffee_icon.png" alt="Frappuccino">
+        Frappuccino
+        <span class="description">Blended coffee with ice and cream</span>
+      </div>
+      <span class="price">$4.50</span>
+    </div>
+  </div>
+</body>
+</html>
